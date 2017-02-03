@@ -105,7 +105,7 @@ yarn message -- 1337 Foo
 
 **Side effects are treated as logicless "drivers"**
 - Side effects can be tested in isolation by injecting two states into them
-- Side effects can be easily be swapped
+- Side effects can be easily swapped
 - Business logic accidentally embedded into side effects can be easily identified as a smell
 
 ## Things that would make this approach user-friendly
