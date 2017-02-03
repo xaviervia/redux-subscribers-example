@@ -1,4 +1,4 @@
-# Subscribers in Redux: example
+# Subscribers everywhere in Redux: example
 
 This is a simple and useless command line app meant to demonstrate how listening to state diff in Redux is useful for more than just UI update.
 
