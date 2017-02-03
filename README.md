@@ -10,6 +10,8 @@ yarn server -- 8080
 
 `8080` is going to be the port where the server is listening to.
 
+![demonstration](redux-subscribers-example.gif)
+
 ## What happens first
 
 The first thing in the app, as you can see in [`server/index.js`](server/index.js), is that a Redux store gets setup, with a simple initial state that looks like this:
