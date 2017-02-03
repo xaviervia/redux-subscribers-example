@@ -10,7 +10,7 @@ yarn server -- 8080
 
 `8080` is going to be the port where the server is listening to.
 
-![demonstration](redux-subscribers-example.gif)
+![demonstration](redux-subscribers-example.mov.gif)
 
 ## What happens first
 
