@@ -1,6 +1,7 @@
 const {createStore} = require('redux')
 const serverSubscriber = require('./subscribers/server')
 const loggerSubscriber = require('./subscribers/logger')
+const {blue} = require('chalk')
 
 const initialState = {
   port: undefined,
@@ -9,6 +10,11 @@ const initialState = {
 }
 
 const reducer = (state, {type, payload}) => {
+  // if you want the verbose debugging experience, uncomment these two lines:
+  // console.log(blue('old state'), state)
+  // console.log(blue('action'), type, payload || '')
+  // …and the line on the bottom of the file
+
   switch (type) {
     case 'SETUP':
       return {
@@ -42,6 +48,8 @@ store.subscribe(loggerSubscriber(store))
 store.dispatch({
   type: 'SETUP',
   payload: {
-    port: 8080
+    port: process.argv[2]
   }
 })
+
+// store.subscribe(() => console.log(blue('new state'), store.getState()))
