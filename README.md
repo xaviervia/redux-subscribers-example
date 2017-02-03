@@ -119,4 +119,4 @@ yarn message -- 1337 Foo
 
 ## License
 
-ISC
+[The Unlicense](LICENSE)
